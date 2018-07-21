@@ -1,0 +1,11 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ../../backend
+      dockerfile: $PWD/backend/Dockerfile
+    ports:
+      - "8080:3000"
+    env_file:
+      - ../../backend/.env
+    restart: "always"
