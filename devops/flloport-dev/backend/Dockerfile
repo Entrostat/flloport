@@ -5,4 +5,4 @@ EXPOSE 3000
 WORKDIR /app
 
 ENTRYPOINT [ "npm" ]
-CMD [ "start" ]
+CMD [ "run", "start:dev" ]
