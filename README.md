@@ -39,4 +39,6 @@ Cool so now that you know what I'm thinking as each person in the business (yes 
 I want to use API integrations with Trello and Google Sheets to deliver the reports and also allow developers to work in the format and flow that they love.
 
 ## The System
-I really like working with `node.js` and that's what I'm sticking to in this project. I'm using `nestjs` for the backend code... because it's effing cool. You should donate if you have the chance!
+I really like working with `node.js` and that's what I'm sticking to in this project. I'm using `nestjs` for the backend code... because it's flipping cool. You should donate if you have the chance!
+
+Just a disclaimer, this is one of the first projects I'm doing using `nestjs` so I might do things incorrectly. If I do something stupid, please correct it and create a pull request!
