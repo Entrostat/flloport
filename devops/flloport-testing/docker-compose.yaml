@@ -10,5 +10,3 @@ services:
       context: ../../backend
       dockerfile: $PWD/backend/Dockerfile
     command: [ "run", "test" ]
-    env_file:
-      - ../../backend/src/.testing.env
