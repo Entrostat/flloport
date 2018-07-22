@@ -12,7 +12,13 @@
     "sourceMap": true,
     "allowJs": true,
     "outDir": "./dist",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "paths": {
+      "@modules/*": [ "app/modules/*" ],
+      "@models/*": [ "app/models/*" ],
+      "@views/*": [ "app/views/*" ],
+      "@app/*": [ "app/*" ]
+    }
   },
   "include": [
     "src/**/*"
