@@ -1,0 +1,33 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ../../backend
+      dockerfile: $PWD/backend/Dockerfile
+    ports:
+      - "8080:3000"
+    env_file:
+      - ../../backend/.env
+    restart: "always"
+    command: [ "run", "start:hmr" ]
+    volumes:
+      - ../../backend:/app
+    networks:
+      - flloport
+    depends_on:
+      - webpack
+
+  webpack:
+    build:
+      context: ../../backend
+      dockerfile: $PWD/backend/Dockerfile
+    env_file:
+      - ../../backend/.env
+    restart: "always"
+    command: [ "run", "webpack" ]
+    volumes:
+      - ../../backend:/app
+    networks:
+      - flloport
+networks:
+  flloport:
