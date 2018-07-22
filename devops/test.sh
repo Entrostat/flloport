@@ -2,7 +2,7 @@
 
 CURRENT_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-cd ${CURRENT_PATH}/flloport-testing/backend
+cd ${CURRENT_PATH}/flloport-testing
 
 TEST_NAME=$(uuidgen)
 
