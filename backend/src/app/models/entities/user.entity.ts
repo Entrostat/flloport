@@ -12,4 +12,10 @@ export class User {
     @Column()
     @IsEmail()
     email: string;
+
+    @Column({
+        type: 'jsonb',
+        default: JSON.stringify({})
+    })
+    details: any;
 }
