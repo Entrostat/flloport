@@ -1,13 +1,8 @@
-FROM node:latest
+FROM node:10.7
 
 EXPOSE 3000
 
 WORKDIR /app
-
-COPY package.json .
-RUN npm install
-
-COPY . .
 
 ENTRYPOINT [ "npm" ]
 CMD [ "start" ]
