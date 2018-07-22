@@ -1,5 +1,7 @@
 #!/bin/bash
 
+NODE_ENV=testing
+
 CURRENT_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
 cd ${CURRENT_PATH}/flloport-testing

@@ -7,7 +7,7 @@ services:
     ports:
       - "8080:3000"
     env_file:
-      - ../../backend/.env
+      - ../../backend/.development.env
     restart: "always"
     command: [ "run", "start:dev" ]
     volumes:
