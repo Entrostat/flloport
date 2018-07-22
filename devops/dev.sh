@@ -1,4 +1,6 @@
 #!/bin/bash
+CURRENT_PATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-cd flloport-dev
+cd ${CURRENT_PATH}/flloport-dev
+
 docker-compose up --build
