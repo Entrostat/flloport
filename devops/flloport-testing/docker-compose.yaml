@@ -1,0 +1,12 @@
+version: "3"
+services:
+  compiler:
+    build:
+      context: ../../backend
+      dockerfile: $PWD/backend/Dockerfile
+    command: [ "run", "prestart:prod" ]
+  tests:
+    build:
+      context: ../../backend
+      dockerfile: $PWD/backend/Dockerfile
+    command: [ "run", "test" ]
