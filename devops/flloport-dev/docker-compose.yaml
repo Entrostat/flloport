@@ -14,5 +14,19 @@ services:
       - ../../backend:/app
     networks:
       - flloport
+    links:
+      - database
+    depends_on:
+      - database
+
+  database:
+    image: postgres:latest
+    ports:
+      - 5432
+    networks:
+      - flloport
+    env_file:
+      - ../../backend/src/.development.env
+
 networks:
   flloport:

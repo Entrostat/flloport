@@ -16,7 +16,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "webpack": "webpack --config webpack.config.js",
     "flloport:dev": "../devops/dev.sh",
-    "flloport:test": "../devops/test.sh"
+    "flloport:test": "../devops/test.sh",
+    "typeorm": "ts-node -r tsconfig-paths/register node_modules/.bin/typeorm"
   },
   "dependencies": {
     "@nestjs/common": "^5.0.0",

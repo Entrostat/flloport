@@ -47,3 +47,5 @@ Thumbs.db
 /api/node_modules
 
 /src/.*.env
+src/.development.env
+src/.testing.env
